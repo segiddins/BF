@@ -11,8 +11,13 @@ if case let args = Process.arguments where args.count > 1, case let file = args[
         if fread(buffer, sizeof(CChar), fileSize, fd) == fileSize {
             buffer[fileSize] = 0
             if let program = String.fromCString(buffer) {
-                VM(program: program).run()
-                exit(EXIT_SUCCESS)
+                if let vm = VM(program: program) {
+                    vm.run()
+                    exit(EXIT_SUCCESS)
+                }
+                else {
+                    print("Invalid BF program in '\(file)'.")
+                }
             }
         }
     }
@@ -25,7 +30,13 @@ else {
     while let line = readLine() {
         input += line
     }
-    VM(program: input).run()
+    if let vm = VM(program: input) {
+        vm.run()
+    }
+    else {
+        print("Invalid BF program")
+        exit(EXIT_FAILURE)
+    }
 }
 
 // Hello world
