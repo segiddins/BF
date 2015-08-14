@@ -16,6 +16,7 @@
 		C07FDAC91B7D672500004507 /* fibonacci.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fibonacci.bf; sourceTree = "<group>"; };
 		C07FDACA1B7D672500004507 /* mandelbrot.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mandelbrot.bf; sourceTree = "<group>"; };
 		C07FDACB1B7D672500004507 /* rot13.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rot13.bf; sourceTree = "<group>"; };
+		C07FDACC1B7D6BF000004507 /* hello_world.bf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello_world.bf; sourceTree = "<group>"; };
 		C0DCC6111B47761B00B714D9 /* bf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bf; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DCC6141B47761B00B714D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C0DCC61B1B47869100B714D9 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				C07FDAC91B7D672500004507 /* fibonacci.bf */,
+				C07FDACC1B7D6BF000004507 /* hello_world.bf */,
 				C07FDACA1B7D672500004507 /* mandelbrot.bf */,
 				C07FDACB1B7D672500004507 /* rot13.bf */,
 			);
